@@ -1,0 +1,8 @@
+[32mINFO    [0m common.recordlog:sendrequest.py:61 接口名称：新增用户
+[32mINFO    [0m common.recordlog:sendrequest.py:62 请求地址：http://127.0.0.1:8787/dar/user/addUser
+[32mINFO    [0m common.recordlog:sendrequest.py:63 请求方式：POST
+[32mINFO    [0m common.recordlog:sendrequest.py:64 测试用例名称：无效新增·缺少token
+[32mINFO    [0m common.recordlog:sendrequest.py:65 请求头：{'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'}
+[32mINFO    [0m common.recordlog:sendrequest.py:66 Cookie：None
+[32mINFO    [0m common.recordlog:sendrequest.py:70 请求参数：{'data': {'username': 'testadduser', 'password': 'tset6789890', 'role_id': 123456789, 'dates': '2023-12-31', 'phone': 13800000000}}
+[1m[31mERROR   [0m common.recordlog:sendrequest.py:36 ConnectionError--连接异常
