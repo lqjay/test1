@@ -13,7 +13,11 @@ if __name__ == '__main__':
         pytest.main(
             ['-s', '-v', '--alluredir=./report/temp', './testcase/Single interface', '--clean-alluredir'])
         shutil.copy('./environment.xml', './report/temp')
-        os.system(f'allure serve ./report/temp')
+        #原来的代码，一次性的，必须每跑完展示
+        #os.system(f'allure serve ./report/temp')
+        #优化后，先生成，在打开
+        os.system(f'allure generate ./report/temp -o ./report/allure-report --clean')
+        #os.system(f'allure open ./report/allure-report')
 
     elif REPORT_TYPE == 'tm':
         pytest.main(['-vs', '--pytest-tmreport-name=testReport.html', '--pytest-tmreport-path=./report/tmreport'])

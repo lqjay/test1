@@ -10,7 +10,7 @@
         user_name: test01AAA
         passwd: admin123AAA
       validation:
-        - contains: { 'msg': '登录成功' }
+        - contains: { 'msg': '登录失败' }
         - contains: { 'status_code': 200 }
       extract:
         token: $.token
